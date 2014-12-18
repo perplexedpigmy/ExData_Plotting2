@@ -16,8 +16,8 @@ scc <- readRDS("data/Source_Classification_Code.rds")
 # Note:
 # Although the excercise suggests that the name may be used.
 # EI.Sector is complimetary when trying to identify pollutant source
-# This step acquires all SCCs in the 'scc table' whose Short.Name or EI.Sector
-# whose value contains combastion and Coal.
+# This step acquires all SCCs in the 'scc table' when any of the 
+# Short.Name or EI.Sector columns contain combustion and Coal.
 # This is just my way, Despire my best effort I couldn't find any complete 
 # description of what should be in each column and whether it can be authoritativly
 # stand along indicate on the pollutnat's origin.
