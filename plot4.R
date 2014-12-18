@@ -37,8 +37,8 @@ png('plot4.png', width=480, height=480)
     print(
         ggplot(agg, aes(x=year, y=Emissions, colour=type)) +
         geom_line(aes(size="total")) +
-        ggtitle(expression("Coal Combustion" ~ PM[2.5] ~ "Emissions by Source Type and Year")) +
+        ggtitle(expression("Coal Combustion" ~ PM[2.5] ~ "Emissions by Type/Year")) +
         xlab("Year") + ylab(expression("Emissions")) +
-        stat_summary(fun.y = "sum", color = "black", geom="line", aes(shape="mean") ) 
+        stat_summary(fun.y = "sum", color = "black", geom="line" ) 
     )
 dev.off()
