@@ -1,3 +1,6 @@
+# NOTE: I seem to mix up the mapping of LA and Baltimore in the submitted version
+#       This version is fixed. Lines 22 in this file
+
 # Exploratory Data Analysis
 # Proejct 2. Question 6
 #   Compare emissions from motor vehicle sources 
