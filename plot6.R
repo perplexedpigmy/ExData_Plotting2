@@ -17,7 +17,7 @@ nei <- readRDS("data/summarySCC_PM25.rds")
 two.cities  <- subset(nei, fips %in% c("24510", "06037") & type=="ON-ROAD")
 
 agg <- aggregate(two.cities["Emissions"], 
-                 list(city = ifelse(two.cities$fips == "06037", "Baltimore City", "Los Angeles County"), 
+                 list(city = ifelse(two.cities$fips == "06037", "Los Angeles County", "Baltimore City"), 
                       year = two.cities$year),
                  sum)
 
